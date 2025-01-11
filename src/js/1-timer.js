@@ -25,7 +25,6 @@ const options = {
 
     if (selectedDate <= new Date()) {
       iziToast.error({
-        title: 'Error',
         message: 'Please choose a date in the future',
         position: 'topRight',
       });
@@ -85,7 +84,6 @@ function startCountdown() {
       clearInterval(countdownInterval);
       updateTimer({ days: 0, hours: 0, minutes: 0, seconds: 0 });
       iziToast.success({
-        title: 'Completed',
         message: 'The countdown has ended!',
         position: 'topRight',
       });
